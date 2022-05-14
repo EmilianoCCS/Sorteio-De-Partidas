@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sorteio de partidas</string>
+    <string name="Inicio">Olá mundo!</string>
+    <string name="txt_simulate">Botão de simulação de partidas</string>
+    <string name="imageViewHome">Imagem do time mandante</string>
+    <string name="textViewHomeTeamName">Nome do time mandante</string>
+    <string name="homeScoreTeam">Pontuação do time do time mandante</string>
+    <string name="awayscore">Pontuação do time visitante</string>
+    <string name="ImageViewAwayTeam">Imagem do time visitante</string>
+    <string name="textviewnameawayteam">Nome do time visitante</string>
+    <string name="verus">X</string>
+
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/marginDefault">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageViewHomeTeam"
+            android:layout_width="@dimen/teamImageSize"
+            android:layout_height="@dimen/teamImageSize"
+            android:layout_marginStart="@dimen/marginDefault"
+            android:layout_marginTop="@dimen/marginDefault"
+            android:contentDescription="@string/imageViewHome"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textViewHomeTeamName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginDefault"
+            android:layout_marginBottom="@dimen/marginDefault"
+            android:contentDescription="@string/textViewHomeTeamName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewHomeTeam"
+            app:layout_constraintHorizontal_bias="0.483"
+            app:layout_constraintStart_toStartOf="@+id/imageViewHomeTeam"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewHomeTeam"
+            tools:text="Home team" />
+
+        <TextView
+            android:id="@+id/textViewHomeTeamScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/homeScoreTeam"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewHomeTeam"
+            app:layout_constraintEnd_toStartOf="@+id/textViewVs"
+            app:layout_constraintStart_toEndOf="@+id/imageViewHomeTeam"
+            app:layout_constraintTop_toTopOf="@+id/imageViewHomeTeam"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/textViewAwayScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/awayscore"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewAwayTeam"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewAwayTeam"
+            app:layout_constraintStart_toEndOf="@+id/textViewVs"
+            app:layout_constraintTop_toTopOf="@+id/imageViewAwayTeam"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/textViewVs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/verus"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewHomeTeam"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageViewHomeTeam" />
+
+        <ImageView
+            android:id="@+id/imageViewAwayTeam"
+            android:layout_width="@dimen/teamImageSize"
+            android:layout_height="@dimen/teamImageSize"
+            android:layout_marginTop="@dimen/marginDefault"
+            android:layout_marginEnd="@dimen/marginDefault"
+            android:contentDescription="@string/ImageViewAwayTeam"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textViewAwayTeamName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginDefault"
+            android:contentDescription="@string/textviewnameawayteam"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewAwayTeam"
+            app:layout_constraintStart_toStartOf="@+id/imageViewAwayTeam"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewAwayTeam"
+            tools:text="Away team" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

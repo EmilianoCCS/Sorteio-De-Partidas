@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">Sorteio De Partidas</string>
+    <string name="app_name">Draw Of Matches</string>
+    <string name="Inicio">Hello World!</string>
+    <string name="txt_simulate">Matches simulations button</string>
+    <string name="imageViewHome">Home team Image</string>
+    <string name="textViewHomeTeamName">Name team home</string>
+    <string name="homeScoreTeam">Home score team</string>
+    <string name="awayscore">Away Score</string>
+    <string name="ImageViewAwayTeam">Image view away team</string>
+    <string name="textviewnameawayteam">Text view name away team</string>
+    <string name="verus">X</string>
 </resources>
